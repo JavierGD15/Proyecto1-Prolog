@@ -18,6 +18,8 @@ estudiante(carlos).
 % Se asume que todos los estudiantes están inscritos en la
 % carrera de ingeniería en sistemas para ejemplificar.
 carrera(ingenieria_sistemas).
+carrera(derecho).
+
 
 %%%%%%%%%%%%%%%%%%%%
 %  Inscrito        %
@@ -45,6 +47,18 @@ curso(programacion2).
 curso(bases_de_datos).
 curso(arquitectura_computadoras).
 curso(matematica_discreta).
+curso(leyes).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Asociar curso a Carrera %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+curso_a_carrera(programacion1, ingenieria_sistemas).
+curso_a_carrera(programacion2, ingenieria_sistemas).
+curso_a_carrera(bases_de_datos, ingenieria_sistemas).
+curso_a_carrera(arquitectura_computadoras, ingenieria_sistemas).
+curso_a_carrera(matematica_discreta, ingenieria_sistemas).
+curso_a_carrera(leyes, derecho).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Pertenencia a Ciclos    %

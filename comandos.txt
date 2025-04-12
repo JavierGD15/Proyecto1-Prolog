@@ -1,0 +1,5 @@
+docker pull swipl
+
+docker run --rm -it -v "$PWD":/app swipl
+docker run --rm -it -v "%cd%":/app swipl
+consult('/app/proyecto.pl').
